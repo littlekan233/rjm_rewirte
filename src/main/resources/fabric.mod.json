@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "rjm_rewrite",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "RJM Rewrite",
+  "description": "RaspberryJamMod rewrite version. It support latest MC version & new Python API!",
   "authors": [
-    "Me!"
+    "littlekan233"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/littlekan233/rjm_rewrite",
+    "sources": "https://github.com/littlekan233/rjm_rewrite"
   },
 
   "license": "CC0-1.0",
@@ -18,14 +18,11 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "ml.littlekan.mcmods.rjmrewrite.ModMain"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
+  "mixins": [],
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
